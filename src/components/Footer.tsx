@@ -4,7 +4,7 @@ import logo from '../../public/logo.png'
 
 const Footer = () => {
   return (
-    <div className="py-24 px-4 md:px-8 lg:px-16 xl:32 2xl:px-64 bg-black border border-t-[2px] border-sky-800 text-sm mt-24">
+    <div className="py-24 px-8 lg:px-16 xl:32 2xl:px-64 bg-black border border-t-[2px] border-sky-800 text-sm mt-24">
       {/* TOP */}
       <div className="flex flex-col md:flex-row justify-center mb-3 gap-4 p-3 py-6 items-center rounded-md bg-zinc-900">
       <button className="flex  h-12 items-center justify-center gap-2 rounded-xl bg-white/5 px-8 text-sm font-medium text-white ring-1 ring-inset ring-white/10 transition-all hover:bg-white/10">
@@ -18,9 +18,9 @@ const Footer = () => {
               </button>
 
       </div>
-      <div className="flex flex-col md:flex-row justify-between gap-24">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-24">
         {/* LEFT */}
-        <div className="w-full md:w-1/2 lg:w-1/3 flex flex-col gap-8">
+        <div className="w-full  flex flex-col gap-8">
           <Link href="/">
             <Image src={logo} alt="" width={120}/>
           </Link>
@@ -30,15 +30,15 @@ const Footer = () => {
           <span className="font-semibold text-white">hello@lama.dev</span>
           <span className="font-semibold text-white">+1 234 567 890</span>
           <div className="flex gap-6 ">
-            <Image className="" src="/facebook.png" alt="" width={16} height={16} />
-            <Image src="/instagram.png" alt="" width={16} height={16} />
-            <Image src="/youtube.png" alt="" width={16} height={16} />
-            <Image src="/pinterest.png" alt="" width={16} height={16} />
-            <Image src="/x.png" alt="" width={16} height={16} />
+            <Image className="bg-white" src="/facebook.png" alt="" width={16} height={16} />
+            <Image  className="bg-white"  src="/instagram.png" alt="" width={16} height={16} />
+            <Image  className="bg-white"  src="/youtube.png" alt="" width={16} height={16} />
+          
+            <Image  className="bg-white"  src="/x.png" alt="" width={16} height={16} />
           </div>
         </div>
         {/* CENTER */}
-        <div className="hidden lg:flex justify-between  w-full md:w-1/3">
+        <div className="flex flex-col md:flex-row justify-between  w-full">
           <div className="flex flex-col  text-white justify-start items-start gap-8">
             <h1 className="font-medium text-lg">Activties</h1>
             <div className="flex flex-col gap-6">
@@ -53,7 +53,7 @@ const Footer = () => {
             </div>
           </div>
         
-          <div className="flex flex-col text-white justify-start items-start gap-8">
+          <div className="flex mt-4 md:mt-0 flex-col text-white justify-start items-start gap-8">
             <h1 className="font-medium text-lg">HELP</h1>
             <div className="flex flex-col gap-6">
               <Link href="">Quick Links</Link>
@@ -70,7 +70,7 @@ const Footer = () => {
           </div>
         </div>
         {/* RIGHT */}
-        <div className="w-full md:w-1/2 lg:w-1/3 flex flex-col gap-8">
+        <div className="w-full flex flex-col gap-8">
           <h1 className="font-medium text-white text-lg">SUBSCRIBE</h1>
           <p className="text-white">
             Be the first to get the latest news. 

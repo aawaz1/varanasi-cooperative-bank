@@ -61,12 +61,12 @@ const formattedTotalAmount = totalAmount.toFixed(2); // Format with two decimal 
   return (
     <>
       <BreadCrumb />
-      <div className="mx-auto container px-12 gap-4 items-start justify-center">
-        <div>
+      <div className="mx-auto container  px-6 xl:px-12 gap-4 items-start justify-center">
+        <div className="pt-6">
           <h2 className="text-yellow-300 font-poppins text-2xl">Maturity Calculator</h2>
-          <div className="border border-b-[2px] w-[20%] border-yellow-300 mb-4"></div>
+          <div className="border border-b-[2px] w-[20%] border-yellow-300 mb-2"></div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2  gap-6 py-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2  gap-6 xl:gap-x-10 py-10">
           <div className="w-full">
             <div className="w-full bg-zinc-900 border border-gray-500 rounded-lg p-3">
               <label
@@ -138,7 +138,7 @@ const formattedTotalAmount = totalAmount.toFixed(2); // Format with two decimal 
           
           </div>
           <div className="w-full bg-zinc-900 border border-gray-500 rounded-lg p-3">
-            <div className="mt-4 text-white font-poppins text-lg">
+          <div className=" w-full text-white flex flex-col justify-between items-start font-poppins text-sm md:text-md xl:text-lg">
               <p className="my-4">
                  Interest Value: <span className="text-md font-poppins text-white">₹{formattedTotalInterest}</span>
               </p>
@@ -157,9 +157,8 @@ const formattedTotalAmount = totalAmount.toFixed(2); // Format with two decimal 
           <div className="w-full lg:w-2/3 mt-6">
            
           </div>
-          <div className="w-2/3">
-            <Calculator />
-          </div>
+        
+   <div className='w-full xl:w-2/3 xl:flex flex-col  xl:items-start justify-start'> <Calculator/> </div>
         </div>
       </div>
     </>

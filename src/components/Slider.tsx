@@ -30,7 +30,7 @@ const Carousel = () => {
   return (
     <div className="relative" id="carouselExampleCaptions">
       {/* Carousel Indicators */}
-      <div className="absolute bottom-0 left-0 right-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0">
+      {/* <div className="absolute bottom-0 left-0 right-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0">
         {slides.map((slide, index) => (
           <button
             key={slide.id}
@@ -42,7 +42,7 @@ const Carousel = () => {
             aria-label={`Slide ${index + 1}`}
           ></button>
         ))}
-      </div>
+      </div> */}
 
       {/* Carousel Items */}
       <div className="relative w-full overflow-hidden">
@@ -60,7 +60,7 @@ const Carousel = () => {
       </div>
 
       {/* Carousel Controls */}
-      <button
+      {/* <button
         className="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 hover:opacity-90"
         type="button"
         onClick={handlePrev}
@@ -105,7 +105,7 @@ const Carousel = () => {
           </svg>
         </span>
         <span className="sr-only">Next</span>
-      </button>
+      </button> */}
     </div>
   );
 };

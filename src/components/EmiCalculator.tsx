@@ -85,7 +85,7 @@ const EmiCalculator = () => {
       className="w-full h-2 bg-gray-200 rounded-lg mb-4 appearance-none cursor-pointer dark:bg-gray-700"
     />
         </div>
-        <div className='w/13'>
+        <div className='w-1/3'>
         <div className="mt-4 text-white font-poppins text-sm">
         <p>
           <strong>Total Interest: </strong>₹{totalInterest}
@@ -104,7 +104,7 @@ const EmiCalculator = () => {
       
       <div className='w-1/3'>
       <h3 className="text-white text-md font-poppins mb-4">Loan Distribution</h3>
-      <div className='w-1/2'>
+      <div className='w-1/3'>
       <Pie className='border border-red-600' data={pieData} />
       </div>
     

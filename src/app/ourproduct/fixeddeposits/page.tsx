@@ -10,8 +10,9 @@ const page = () => {
         
        
        <BreadCrumb name='Our Products' title="Fixed Deposits"/>
-       <main className="mt-10 flex flex-col md:flex-row justify-between gap-4 items-start mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-10 lg:mt-10 lg:px-8 xl:mt-10">
-            <div className='lg:w-2/3 bg-zinc-900 rounded-md p-3 px-4'>
+       <main className="mt-10 grid grid-cols-1 xl:grid-cols-12 gap-4 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-10 xl:mt-10 xl:px-8 ">
+  {/* Left Column (History and Table) */}
+  <div className="col-span-12 xl:col-span-8 w-full bg-zinc-900 px-4 rounded-md p-3">
 <div className="sm:text-center lg:text-left">
 <h2 className="my-6 text-2xl text-yellow-300 flex gap-4 tracking-tight font-extrabold  sm:text-3xl md:text-3xl">
    Fixed Deposits
@@ -132,13 +133,13 @@ const page = () => {
 </div>
 </div>
 
-<div className=" lg:w-1/3 w-full space-y-6">
-<Calculator/>
-<WhatNew/>
-
-
-
- 
+<div className="col-span-12 xl:col-span-4 grid grid-cols-12 gap-4 w-full">
+  <div className="col-span-12 md:col-span-6 ">
+    <Calculator />
+  </div>
+  <div className="col-span-12 md:col-span-6">
+    <WhatNew />
+  </div>
 </div>
 </main>
  

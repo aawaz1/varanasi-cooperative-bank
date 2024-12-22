@@ -11,7 +11,7 @@ import Carousel from "@/components/Slider";
 export default function Home() {
   return (
     // <div className="relative min-h-screen bg-black selection:bg-sky-500/20 overflow-hidden">
-    <main className=" px-6 pt-16">
+    <main className=" px-6 pt-16 lg:mx-auto lg:container">
         <Carousel/>
       <div className="">
         {/* Hero Section */}

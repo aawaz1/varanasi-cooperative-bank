@@ -20,10 +20,10 @@ const Calculator = () => {
   ];
 
   return (
-    <div className="bg-zinc-900 p-3  hover:bg-blue-800/30 flex flex-col justify-center gap-9 py-8 rounded-xl px-4 md:px-12">
+    <div className="bg-zinc-900 p-3  hover:bg-sky-800/30 flex flex-col justify-center gap-9 py-8 rounded-xl px-4 md:px-12">
    
       <div>
-        <h2 className="text-2xl font-poppins text-yellow-300">Calculator</h2>
+        <h2 className="text-2xl font-poppins text-yellow-300"> Other Calculator</h2>
         <div className="border-t-2 border-yellow-500"></div>
       </div>
       {projects.map((item, idx) => (

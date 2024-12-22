@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: " ZILA SAHKARI BANK LTD. MIRZAPUR	",
+  title: " VARANASI DISTRICT CO-OPERATIVE BANK 	",
   description: " ZILA SAHKARI BANK LTD. MIRZAPUR	",
 };
 

@@ -27,7 +27,7 @@ const BreadCrumb = ({title , name} : any) => {
         <li>
           <Link
             href="/"
-            className="motion-reduce:transition-none-none text-white transition duration-200 hover:text-zinc-300 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80"
+            className="motion-reduce:transition-none-none text-white transition duration-200 hover:text-zinc-300 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 text-sm md:text-md"
           >
             Home
           </Link>
@@ -39,7 +39,7 @@ const BreadCrumb = ({title , name} : any) => {
         <li>
           <span
             
-            className="motion-reduce:transition-none-none text-white transition duration-200 hover:text-zinc-300 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 capitalize"
+            className="motion-reduce:transition-none-none text-white transition duration-200 hover:text-zinc-300 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 capitalize tex-sm md:text-md"
           >
      {capitalize(second)}
           </span>
@@ -55,7 +55,7 @@ const BreadCrumb = ({title , name} : any) => {
         <li>
           <Link
             href={capitalize(first)}
-            className="motion-reduce:transition-none-none text-white transition duration-200 hover:text-zinc-300 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 capitalize"
+            className="motion-reduce:transition-none-none text-white transition duration-200 hover:text-zinc-300 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition motion-reduce:transition-none dark:text-white/60 text-sm md:text-md dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 capitalize"
           >
                  {capitalize(first) === "privacyPolicy" ? " Terms & Policy" :  capitalize(first) === "ho" ? "Bank HO Staff" : capitalize(first) === "mission" ? "Our Mission and Vision" : capitalize(first)}
 

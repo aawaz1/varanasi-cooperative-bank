@@ -31,20 +31,20 @@ const EmiCalculator = () => {
         datasets: [
           {
             data: [parseFloat(totalInterest), parseFloat(rangeValue)],
-            backgroundColor: ["#FF6384", "#36A2EB"],
-            hoverBackgroundColor: ["#FF6384", "#36A2EB"],
+            backgroundColor: ["#0A58CA", "#FFFFFF"],
+            hoverBackgroundColor: ["#126FE3", "#F3F3F3"],
           },
         ],
       };
   return (
     <>
     <BreadCrumb/>
-    <div className='mx-auto container px-12    gap-4 items-start justify-center'>
-          <div>
+    <div className='mx-auto container px-6 md:px-8 xl:px-12    gap-4 items-start justify-center'>
+    <div className="pt-6">
             <h2 className='text-yellow-300 font-poppins text-2xl'>EMI Calculator</h2>
-            <div className='border border-b-[2px] w-[15%] border-yellow-300 mb-4'></div>
+            <div className='border border-b-[2px] w-[15%] border-yellow-300 mb-2'></div>
             </div>
-      <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-2 gap-6  py-10">
+      <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-2 gap-12  py-10">
       <div className=' w-full'>
       
       <div className='w-full bg-zinc-900 border border-gray-500 rounded-lg  p-3'>
@@ -104,7 +104,7 @@ const EmiCalculator = () => {
     </div>
       </div>
       <div className='w-full  bg-zinc-900 border border-gray-500 rounded-lg  p-3'>
-        <div className="mt-4 text-white font-poppins text-lg">
+      <div className=" w-full text-white flex flex-col justify-between items-start font-poppins text-sm md:text-md xl:text-lg">
         <p className='my-4'>
           Total Interest : <span className='text-md font-poppins text-white'>₹{totalInterest}</span>
         </p>
@@ -119,10 +119,10 @@ const EmiCalculator = () => {
         </p>
       </div>
         </div>
-        <div className='w-full lg:w-2/3  mt-6'>
+        <div className='w-full xl:w-1/2  mt-6'>
     <Pie className='' data={pieData} />
     </div>
-   <div className='w-full'> <Calculator/> </div>
+   <div className='w-full xl:w-2/3 xl:flex flex-col  xl:items-start justify-start'> <Calculator/> </div>
       </div>
      
      

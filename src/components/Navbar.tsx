@@ -18,7 +18,7 @@ type NavItem = {
   iconImage?: string;
 };
 
-const navItems: NavItem[] = [
+const navItems: any = [
   {
     label: "Home",
     link: "/"
@@ -236,8 +236,8 @@ export default function Navbar() {
               </Link>
             </div>
         {isSideMenuOpen && <MobileNav closeSideMenu={closeSideMenu} />}
-        <div className="hidden  md:flex items-center gap-2 transition-all">
-          {navItems.map((d, i) => (
+        <div className="hidden  xl:flex items-center gap-2 transition-all">
+          {navItems.map((d:any, i:any) => (
             <Link
               key={i}
               href={d.link ?? "#"}
@@ -253,10 +253,10 @@ export default function Navbar() {
               {/* dropdown */}
               {d.children && (
                 <div className="absolute   right-0 z-50   top-10 hidden w-auto  flex-col gap-1   rounded-lg bg-blue-950 py-3 shadow-md  transition-all group-hover:flex ">
-                  {d.children.map((ch, i) => (
+                  {d.children.map((ch :any, i:any) => (
                     <Link
                       key={i}
-                      href={ch.link ?? "#"}
+                      href={ch.link}
                       className=" flex cursor-pointer items-center  py-1 pl-6 pr-8  text-neutral-400 hover:text-black  "
                     >
                       {/* image */}
@@ -282,7 +282,7 @@ export default function Navbar() {
 
       <FiMenu
         onClick={openSideMenu}
-        className="cursor-pointer text-4xl md:hidden text-white"
+        className="cursor-pointer text-4xl xl:hidden text-white"
       />
     </div>
     </div>
@@ -291,8 +291,8 @@ export default function Navbar() {
 
 function MobileNav({ closeSideMenu }: { closeSideMenu: () => void }) {
   return (
-    <div className="fixed z-50 left-0 top-0 flex h-full w-full justify-end bg-black md:hidden">
-      <div className="h-full w-[65%] px-4 py-4">
+    <div className="fixed z-50 left-0 top-0 flex h-full w-full justify-end xl:hidden">
+      <div className="h-full w-[65%]  bg-black  px-4 py-4">
         <section className="flex justify-end">
           <AiOutlineClose
             onClick={closeSideMenu}
@@ -300,7 +300,7 @@ function MobileNav({ closeSideMenu }: { closeSideMenu: () => void }) {
           />
         </section>
         <div className="flex flex-col gap-2 text-base text-white transition-all">
-          {navItems.map((d, i) => (
+          {navItems.map((d:any, i:any) => (
             <SingleNavItem
               key={i}
               label={d.label}
@@ -317,7 +317,7 @@ function MobileNav({ closeSideMenu }: { closeSideMenu: () => void }) {
 }
 
 
-function SingleNavItem(d: NavItem) {
+function SingleNavItem(d: any) {
   const [animationParent] = useAutoAnimate();
   const [isItemOpen, setItem] = useState(false);
 
@@ -329,7 +329,7 @@ function SingleNavItem(d: NavItem) {
     <Link
       ref={animationParent}
       onClick={toggleItem}
-      href={d.link ?? "#"}
+      href={d.link}
       className="relative   px-2 py-3 transition-all "
     >
       <p className="flex cursor-pointer items-center gap-2 text-neutral-400 group-hover:text-black ">
@@ -345,10 +345,10 @@ function SingleNavItem(d: NavItem) {
       {/* dropdown */}
       {isItemOpen && d.children && (
         <div className="  w-auto  flex-col gap-1   rounded-lg bg-blue-950 py-3   transition-all flex ">
-          {d.children.map((ch, i) => (
+          {d.children.map((ch:any, i:any) => (
             <Link
               key={i}
-              href={ch.link ?? "#"}
+              href={ch?.link}
               className=" flex cursor-pointer items-center  py-1 pl-6 pr-8  text-neutral-400 hover:text-black  "
             >
               {/* image */}

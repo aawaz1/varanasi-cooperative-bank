@@ -7,7 +7,7 @@ import { GlareCard } from './ui/glare-card'
 const History = () => {
   return (
   
-   <div className='flex flex-col lg:flex-row justify-start items-start px-8 container mx-auto py-6  '>
+   <div className='flex flex-col lg:flex-row justify-start items-start px-1 lg:px-8 lg:container lg:mx-auto py-6  '>
         <div className='py-4 px-4  rounded-2xl p-2 w-full lg:w-1/2 space-y-4'>
         <div>
         <h2 className='text-2xl font-semibold  text-yellow-300'>
