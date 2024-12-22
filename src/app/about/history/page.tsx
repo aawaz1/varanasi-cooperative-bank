@@ -50,32 +50,35 @@ In India the Co-Operative Act was first created in 1904 and then passed again in
 
            In the beginning the bank faced several financial problems, during which the bank received continued support of the city&apos;s public. Just as a small seed gradually assumes the form of a giant tree, in the same way the bank grew gradually day by day. In 1941, Bank completed its first Silver Jubilee (25 years) with flying colours. In coming years, the bank accepted the 1954-55 provincial supervision. In 1965, the new Co-Operative Act was passed after which the bank progressed continually. In 1976, Bank celebrated its Golden Jubilee and in 2001, celebrated its Diamond Jubilee. The phenomenal progress of the Bank from 1916 to 2015 is shown in the following brief table:-
 </p>
-<table className="table-auto border-collapse border mt-6 border-gray-400 w-full text-center">
-        <thead className="bg-gray-200">
-          <tr>
-            <th className="border border-gray-400 px-4 py-2">S.No</th>
-            <th className="border border-gray-400 px-4 py-2">Description</th>
-            {years.map((year, index) => (
-              <th key={index} className="border border-gray-400 px-4 py-2">
-                Year {year}
-              </th>
-            ))}
-          </tr>
-        </thead>
-        <tbody>
-          {data.map((row, rowIndex) => (
-            <tr key={rowIndex} className="">
-              <td className="border text-white border-gray-400 px-4 py-2">{rowIndex + 1}</td>
-              <td className="border text-white border-gray-400 px-4 py-2">{row[0]}</td>
-              {row.slice(1).map((value, colIndex) => (
-                <td key={colIndex} className="border text-white border-gray-400 px-4 py-2">
-                  {value}
-                </td>
-              ))}
-            </tr>
+<div className="overflow-x-auto">
+  <table className="max-w-[50px] md:max-w-none border-collapse border mt-6 border-gray-400 w-full text-center">
+    <thead className="bg-gray-200">
+      <tr>
+        <th className="border border-gray-400 px-4 py-2">S.No</th>
+        <th className="border border-gray-400 px-4 py-2">Description</th>
+        {years.map((year, index) => (
+          <th key={index} className="border border-gray-400 px-4 py-2">
+            Year {year}
+          </th>
+        ))}
+      </tr>
+    </thead>
+    <tbody>
+      {data.map((row, rowIndex) => (
+        <tr key={rowIndex} className="">
+          <td className="border text-white border-gray-400 px-4 py-2">{rowIndex + 1}</td>
+          <td className="border text-white border-gray-400 px-4 py-2">{row[0]}</td>
+          {row.slice(1).map((value, colIndex) => (
+            <td key={colIndex} className="border text-white border-gray-400 px-4 py-2">
+              {value}
+            </td>
           ))}
-        </tbody>
-      </table>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
+
       <p className='my-2 text-white'>
       In 2012, the Reserve Bank of India granted license to the Bank for doing business in Banking Sector. The most prominent feature of our bank is that, since its inception date the Bank has always been in Profit.   
 

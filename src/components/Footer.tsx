@@ -38,7 +38,7 @@ const Footer = () => {
           </div>
         </div>
         {/* CENTER */}
-        <div className="hidden lg:flex justify-between w-1/3">
+        <div className="hidden lg:flex justify-between  w-full md:w-1/3">
           <div className="flex flex-col  text-white justify-start items-start gap-8">
             <h1 className="font-medium text-lg">Activties</h1>
             <div className="flex flex-col gap-6">

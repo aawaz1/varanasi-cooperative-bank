@@ -11,7 +11,7 @@ const Carousel = () => {
       image: "https://tecdn.b-cdn.net/img/Photos/Slides/img%20(22).jpg",
       label: "Second slide label",
       text: "Some representative placeholder content for the second slide.",
-    }
+    },
   
   ];
 
@@ -45,7 +45,7 @@ const Carousel = () => {
       </div>
 
       {/* Carousel Items */}
-      {/* <div className="relative w-full overflow-hidden">
+      <div className="relative w-full overflow-hidden">
         {slides.map((slide, index) => (
           <div
             key={slide.id}
@@ -57,10 +57,10 @@ const Carousel = () => {
           
           </div>
         ))}
-      </div> */}
+      </div>
 
       {/* Carousel Controls */}
-      {/* <button
+      <button
         className="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 hover:opacity-90"
         type="button"
         onClick={handlePrev}
@@ -82,8 +82,8 @@ const Carousel = () => {
           </svg>
         </span>
         <span className="sr-only">Previous</span>
-      </button> */}
-      {/* <button
+      </button>
+      <button
         className="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 hover:opacity-90"
         type="button"
         onClick={handleNext}
@@ -105,7 +105,7 @@ const Carousel = () => {
           </svg>
         </span>
         <span className="sr-only">Next</span>
-      </button> */}
+      </button>
     </div>
   );
 };

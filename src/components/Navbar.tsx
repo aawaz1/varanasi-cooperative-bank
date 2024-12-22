@@ -293,8 +293,8 @@ function MobileNav({ closeSideMenu }: { closeSideMenu: () => void }) {
   return (
     <div className="fixed z-50 left-0 top-0 flex h-full w-full justify-end bg-black md:hidden">
       <div className="h-full w-[65%] px-4 py-4">
-        <section className="flex justify-start">
-          <IoMdArrowBack
+        <section className="flex justify-end">
+          <AiOutlineClose
             onClick={closeSideMenu}
             className="cursor-pointer text-4xl text-white"
           />

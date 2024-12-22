@@ -20,11 +20,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="relative min-h-screen bg-black selection:bg-sky-500/20">
+        <div className="min-h-screen overflow-x-hidden bg-black selection:bg-sky-500/20">
           {/* Gradient Background */}
          
           <Navbar />
-          <main className="">
+          <main className="w-full min-w-[100%]">
             {children}
           </main>
           <Footer/>

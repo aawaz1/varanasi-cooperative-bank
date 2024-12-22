@@ -36,32 +36,34 @@ const BranchDetails = () => {
     ];
   
     return (
-      <div className="w-full bg-zinc-900 p-3 px-4 rounded-md">
-        <table className="table-auto text-white border-collapse  border border-gray-400 w-full text-left">
-          <thead>
-            <tr>
-              <th className="border text-white border-gray-400 px-4 py-2">S. No.</th>
-              <th className="border border-gray-400 px-4 py-2">Branch Name & Address</th>
-              <th className="border border-gray-400 px-4 py-2">Pin</th>
-              <th className="border border-gray-400 px-4 py-2">Contact Person</th>
-              <th className="border border-gray-400 px-4 py-2">Contact No</th>
-              <th className="border border-gray-400 px-4 py-2">Email Address</th>
+      <div className="w-full overflow-x-auto bg-zinc-900 p-3 rounded-md">
+      <table className="min-w-full  text-white border-collapse border border-gray-400 text-left">
+        <thead className="bg-gray-700">
+          <tr>
+            <th className="border border-gray-400 px-4 py-2">S. No.</th>
+            <th className="border border-gray-400 px-4 py-2">Branch Name & Address</th>
+            <th className="border border-gray-400 px-4 py-2">Pin</th>
+            <th className="border border-gray-400 px-4 py-2">Contact Person</th>
+            <th className="border border-gray-400 px-4 py-2">Contact No</th>
+            <th className="border border-gray-400 px-4 py-2">Email Address</th>
+          </tr>
+        </thead>
+        <tbody>
+          {branches.map((branch, index) => (
+            <tr key={branch.id} className={index % 2 === 0 ? "bg-gray-800" : "bg-zinc-900"}>
+              <td className="border border-gray-400 px-4 py-2">{index + 1}</td>
+              <td className="border border-gray-400 px-4 py-2">{branch.name}</td>
+              <td className="border border-gray-400 px-4 py-2">{branch.pin}</td>
+              <td className="border border-gray-400 px-4 py-2">{branch.contactPerson}</td>
+              <td className="border border-gray-400 px-4 py-2">{branch.contactNo}</td>
+              <td className="border border-gray-400 px-4 py-2">{branch.email || "N/A"}</td>
             </tr>
-          </thead>
-          <tbody>
-            {branches.map((branch) => (
-              <tr key={branch.id}>
-                <td className="border border-gray-400 px-4 py-2">{branch.id}</td>
-                <td className="border border-gray-400 px-4 py-2">{branch.name}</td>
-                <td className="border border-gray-400 px-4 py-2">{branch.pin}</td>
-                <td className="border border-gray-400 px-4 py-2">{branch.contactPerson}</td>
-                <td className="border border-gray-400 px-4 py-2">{branch.contactNo}</td>
-                <td className="border border-gray-400 px-4 py-2">{branch.email || "N/A"}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    
+    
     );
   };
   

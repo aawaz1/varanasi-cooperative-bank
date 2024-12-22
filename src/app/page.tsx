@@ -13,7 +13,7 @@ export default function Home() {
     // <div className="relative min-h-screen bg-black selection:bg-sky-500/20 overflow-hidden">
     <main className=" px-6 pt-16">
         <Carousel/>
-      <div className="mx-auto max-w-5xl">
+      <div className="">
         {/* Hero Section */}
         <div className="flex flex-col items-center text-center">
         
