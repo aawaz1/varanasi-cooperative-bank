@@ -1,0 +1,40 @@
+.custom-range::-webkit-slider-thumb {
+    appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #4f46e5; /* Custom thumb color */
+    cursor: pointer;
+    border: 2px solid #ffffff;
+  }
+  
+  .custom-range::-moz-range-thumb {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #4f46e5; /* Custom thumb color */
+    cursor: pointer;
+    border: 2px solid #ffffff;
+  }
+  
+  .custom-range::-ms-thumb {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #4f46e5; /* Custom thumb color */
+    cursor: pointer;
+    border: 2px solid #ffffff;
+  }
+  
+  /* Optional: Customize the track color */
+  .custom-range {
+    --tw-bg-opacity: 1;
+    background-color: rgba(229, 231, 235, var(--tw-bg-opacity));
+  }
+  
+  .custom-range::-webkit-slider-runnable-track {
+    height: 2px;
+    background: linear-gradient(90deg, #4f46e5, #d1d5db);
+    border-radius: 5px;
+  }
+  
