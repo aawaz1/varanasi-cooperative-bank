@@ -1,3 +1,4 @@
+"use client"
 import { HoverEffect } from "../ui/card-hover-effect";
 import { GiShakingHands } from "react-icons/gi";
 import { VscLightbulbSparkle } from "react-icons/vsc";
@@ -10,12 +11,21 @@ import { FaCheck } from "react-icons/fa";
 
 import Link from "next/link";
 import Calculator from "./Calculator";
+import AOS from "aos"
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 
 
 export function ActivitiesCard() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+      once: true,    // Whether the animation should happen only once
+    });
+  }, []);
   return (
-    (<div className=" w-full px-0 lg:px-12 py-4 pt-32 justify-center items-center gap-4     grid grid-cols-1 md:grid-cols-2  xl:grid-cols-3  
+    (<div    data-aos="flip-right" className=" w-full px-0 lg:px-12 py-4 pt-32 justify-center items-center gap-4     grid grid-cols-1 md:grid-cols-2  xl:grid-cols-3  
   container mx-0 md:mx-auto ">
    <Calculator/>  
     <ActiveCard/>

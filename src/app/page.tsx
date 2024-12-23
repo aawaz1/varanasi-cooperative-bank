@@ -1,3 +1,4 @@
+"use client"
 import Link from "next/link";
 import { MdMapsHomeWork } from "react-icons/md";
 import { FaCarRear } from "react-icons/fa6";
@@ -7,13 +8,25 @@ import History from "@/components/History";
 import { ActivitiesCard } from "@/components/ActivitesCard";
 import EmiCalculator from "@/components/EmiCalculator";
 import Carousel from "@/components/Slider";
+import AOS from "aos"
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
+
+
 
 export default function Home() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+      once: true,    // Whether the animation should happen only once
+    });
+  }, []);
   return (
     // <div className="relative min-h-screen bg-black selection:bg-sky-500/20 overflow-hidden">
-    <main className=" px-6 pt-16 lg:mx-auto lg:container">
+    <main className=" px-6 pt-16">
         <Carousel/>
-      <div className="">
+      <div className="lg:mx-auto lg:container">
         {/* Hero Section */}
         <div className="flex flex-col items-center text-center">
         
@@ -115,6 +128,7 @@ export default function Home() {
           ].map((feature, i) => (
             <div
               key={i}
+              data-aos="flip-left"
               className="group relative overflow-hidden rounded-2xl bg-zinc-900 p-8 transition-all hover:bg-zinc-800/80"
             >
               <div className="absolute inset-0 bg-gradient-to-b from-sky-500/10 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />

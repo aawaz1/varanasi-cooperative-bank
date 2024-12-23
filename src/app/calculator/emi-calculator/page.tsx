@@ -41,9 +41,9 @@ const EmiCalculator = () => {
     <>
     <BreadCrumb/>
     <div className='mx-auto container px-6 md:px-8 xl:px-12    gap-4 items-start justify-center'>
-    <div className="pt-6">
+    <div className="pt-6 flex flex-col  gap-2 justify-center items-center">
             <h2 className='text-yellow-300 font-poppins text-2xl'>EMI Calculator</h2>
-            <div className='border border-b-[2px] w-[15%] border-yellow-300 mb-2'></div>
+            <div className='border border-b-[2px] w-full border-yellow-300 mb-2'></div>
             </div>
       <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-2 gap-12  py-10">
       <div className=' w-full'>

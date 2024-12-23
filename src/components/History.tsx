@@ -20,7 +20,7 @@ const History = () => {
         <GlareCard className="flex flex-col items-center justify-center">
         <div className='bg-white p-2 w-full h-full rounded-md flex justify-between flex-col'>
             <Image className='h-72 w-full' src={barcode} alt='hello'/>
-            <p className='text-center text-sm'>District Co-Operative Bank Ltd. Mirzapur</p>
+            <p className='text-center text-sm'>VARANASI DISTRICT CO-OPERATIVE BANK</p>
 
             </div>
             </GlareCard>
