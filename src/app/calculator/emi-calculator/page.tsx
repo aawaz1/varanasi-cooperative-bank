@@ -31,8 +31,9 @@ const EmiCalculator = () => {
         datasets: [
           {
             data: [parseFloat(totalInterest), parseFloat(rangeValue)],
-            backgroundColor: ["#0A58CA", "#FFFFFF"],
-            hoverBackgroundColor: ["#126FE3", "#F3F3F3"],
+            backgroundColor: ["#FFFFFF", "#0A58CA"],
+            hoverBackgroundColor: ["#F3F3F3", "#126FE3"],
+            borderWidth: 0,
           },
         ],
       };
